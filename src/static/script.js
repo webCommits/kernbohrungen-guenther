@@ -28,12 +28,21 @@ function animateHeader() {
     console.log("Loaded");
 
     const header = document.querySelector('.header');
+    const smalllogo = document.querySelector('#smalllogo');
+    const biglogo = document.querySelector('#biglogo');
+    const links = document.querySelector('.links');
 
     window.addEventListener('scroll', () => {
         if (window.pageYOffset > 8) {
             header.classList.add('full')
+            smalllogo.style.display = "block"
+            biglogo.style.display = "none"
+            links.style.display = "none"
         } else {
             header.classList.remove('full')
+            smalllogo.style.display = "none"
+            biglogo.style.display = "block"
+            links.style.display = "flex"
         }
     })
 }
