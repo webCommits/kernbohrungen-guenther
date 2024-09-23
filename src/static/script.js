@@ -31,6 +31,7 @@ function animateHeader() {
     const smalllogo = document.querySelector('#smalllogo');
     const biglogo = document.querySelector('#biglogo');
     const links = document.querySelector('.links');
+    const menubtn = document.querySelector('.menubtn');
 
     window.addEventListener('scroll', () => {
         if (window.pageYOffset > 8) {
@@ -38,11 +39,13 @@ function animateHeader() {
             smalllogo.style.display = "block"
             biglogo.style.display = "none"
             links.style.display = "none"
+            menubtn.style.display = "block"
         } else {
             header.classList.remove('full')
             smalllogo.style.display = "none"
             biglogo.style.display = "block"
             links.style.display = "flex"
+            menubtn.style.display = "none"
         }
     })
 }

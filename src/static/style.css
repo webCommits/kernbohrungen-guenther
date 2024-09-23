@@ -94,7 +94,7 @@ nav img {
 }
 
 .menubtn {
-    display: block;
+    display: none;
 }
 
 nav a:hover {
@@ -119,16 +119,16 @@ nav a:hover img{
 }
 
 #biglogo {
-    height: 8em;
+    height: 10em;
     display: block;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 3em;
 }
 
 #biglogo img{
     height: 8em;
     width: auto;
-    margin-left: 12%;
 }
 
 #biglogo a:hover{
