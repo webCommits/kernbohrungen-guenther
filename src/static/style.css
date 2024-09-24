@@ -763,7 +763,11 @@ nav a:hover img{
     flex-direction: row;
     justify-content: flex-start;
     gap: 14em;
+}
 
+.imprcontainer a:hover{
+    background: none;
+    filter: invert();
 }
 
 .footer {
