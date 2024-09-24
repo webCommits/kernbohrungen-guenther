@@ -10,13 +10,14 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    max-width: 100%;
-    margin: 0;
+    max-width: 72em;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 1;
     background: #f9faf8;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
 }
 
 h1 {
@@ -1202,12 +1203,10 @@ form button:hover {
 .hidden {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-100%);
     transition: all 1s;
 }
 
 .show {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0);
 }
