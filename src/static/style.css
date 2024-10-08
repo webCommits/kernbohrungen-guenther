@@ -211,11 +211,11 @@ nav a:hover img{
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    align-items: center;
+    align-items: flex-start;
     gap: 0em;
     color: var(--font);
     font-size: 1.1em;
-    text-align: justify;
+    text-align: left;
 }
 
 .secone h1{
@@ -225,11 +225,12 @@ nav a:hover img{
 .secone h3,
 .secone h1 {
     margin: 0;
+    padding: 20px;
 }
 
 .secone img{
-    max-width: 200px;
-    margin-top: 11em;
+    width: 100%;
+    margin-top: 0;
     margin-bottom: 1em;
 }
 
@@ -324,7 +325,7 @@ nav a:hover img{
 }
 
 #about {
-    margin-top: 2em;
+    margin-top: 0;
     margin-bottom: 4em;
 }
 
