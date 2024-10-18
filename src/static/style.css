@@ -1,7 +1,7 @@
 :root{
     --main-bg: #0047BB;
     --main-bg-dark: #0047BB;
-    --main-bg-secondary: #1f4757;
+    --main-bg-secondary: #075472;
     --main-sec: #0047BB;
     --secondary: #0047BB;
     --primary: #003ab7;
@@ -810,6 +810,60 @@ nav a:hover img{
     bottom: 64px;
     opacity: 80%;
     pointer-events: auto;
+}
+
+.telbutton {
+    background: var(--main-bg-secondary);
+    position: fixed;
+    bottom: 64px;
+    right: 64px;
+    width: 32px;
+    height: 32px;
+    border: var(--secondary);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0 4px #000000;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.telbutton.active {
+    bottom: 164px;
+    opacity: 80%;
+    pointer-events: auto;
+}
+
+.mailbutton {
+    background: var(--main-bg-secondary);
+    position: fixed;
+    bottom: 64px;
+    right: 64px;
+    width: 32px;
+    height: 32px;
+    border: var(--secondary);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0 4px #000000;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.mailbutton.active {
+    bottom: 114px;
+    opacity: 80%;
+    pointer-events: auto;
+}
+
+
+.telbutton img,
+.mailbutton img{
+    width: 24px;
 }
 
 .spacer {

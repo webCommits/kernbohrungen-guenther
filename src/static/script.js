@@ -24,6 +24,23 @@ function showTopButton() {
     })
 }
 
+function showContactButtons() {
+    console.log("Loaded");
+
+    const telbutton = document.querySelector('.telbutton');
+    const mailbutton = document.querySelector('.mailbutton');
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 100) {
+            telbutton.classList.add('active')
+            mailbutton.classList.add('active')
+        } else {
+            telbutton.classList.remove('active')
+            mailbutton.classList.remove('active')
+        }
+    })
+}
+
 function animateHeader() {
     console.log("Loaded");
 
@@ -52,6 +69,7 @@ function animateHeader() {
 
 document.addEventListener('DOMContentLoaded', function() {
     showTopButton();
+    showContactButtons();
     animateHeader();
     smoothScrollWithOffset('#scroll-arrow');
 })
