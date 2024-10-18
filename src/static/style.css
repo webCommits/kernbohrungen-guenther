@@ -984,7 +984,6 @@ form button:hover {
     h1 {
         font-size: 2em;
         font-weight: bold;
-        color: #f9faf8;
     }
 
     nav ul {
@@ -1021,7 +1020,8 @@ form button:hover {
 
     .secone h1 {
         font-size: 3em;
-        text-align: center;
+        text-align: left;
+        color: #000000;
     }
 
     .secone p {
@@ -1108,9 +1108,8 @@ form button:hover {
         margin-bottom: 8px;
     }
 
-    .seconeleft {
-        display: flex;
-        justify-content: center;
+    .secone img {
+        height: 18em;
     }
 
     .sectwo{
@@ -1137,7 +1136,7 @@ form button:hover {
 
     #about h1 {
         font-size: xx-large;
-        text-align: center;
+        text-align: left;
     }
 
     #aboutus::before{
