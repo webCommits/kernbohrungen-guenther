@@ -50,6 +50,8 @@ function animateHeader() {
     const links = document.querySelector('.links');
     const menubtn = document.querySelector('.menubtn');
 
+    menubtn.style.display = "none"
+
     window.addEventListener('scroll', () => {
         if (window.pageYOffset > 8) {
             header.classList.add('full')
