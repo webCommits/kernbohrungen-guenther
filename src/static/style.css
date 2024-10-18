@@ -843,7 +843,7 @@ nav a:hover img{
 
 .totop.active {
     bottom: 64px;
-    opacity: 80%;
+    opacity: 60%;
     pointer-events: auto;
 }
 
@@ -867,7 +867,7 @@ nav a:hover img{
 
 .telbutton.active {
     bottom: 164px;
-    opacity: 80%;
+    opacity: 60%;
     pointer-events: auto;
 }
 
@@ -891,7 +891,7 @@ nav a:hover img{
 
 .mailbutton.active {
     bottom: 114px;
-    opacity: 80%;
+    opacity: 60%;
     pointer-events: auto;
 }
 
