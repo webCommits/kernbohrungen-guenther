@@ -525,7 +525,7 @@ nav a:hover img{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 1em;
+    gap: 0;
     text-align: justify;
     overflow: auto;
 }
@@ -633,10 +633,6 @@ form button:hover {
 
     .contact-container a:hover {
         padding: 2.4em;
-    }
-
-    .impressum-page {
-        gap: 0;
     }
 }
 
