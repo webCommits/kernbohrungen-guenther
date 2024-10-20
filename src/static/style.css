@@ -237,7 +237,6 @@ nav a:hover img{
 }
 
 #machinepic {
-    height: 14em;
     object-position: 100% 20%;
 }
 
@@ -378,66 +377,6 @@ nav a:hover img{
 
 .secthreebutton:hover {
     background-color: #ae9db6;
-}
-
-
-.contact-sec {
-    background-color: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1;
-    align-items: center;
-    gap: 0em;
-    color: var(--font);
-    font-size: 1.1em;
-    text-align: center;
-    margin-top: 10em;
-    margin-bottom: 12em;
-}
-
-.contact-sec h1{
-    font-size: 3em;
-}
-
-.contact-sec h3,
-.contact-sec h1 {
-    margin: 0;
-}
-
-.contactformular {
-    max-width: 30em;
-}
-
-.contact-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 4em;
-    gap: 6em;
-}
-
-.contact-container a {
-    border: solid var(--main-sec) 2px;
-    border-radius: 12px;
-    padding: 3em;
-}
-
-.contact-container a:hover {
-    background-color: var(--main-bg-secondary);
-    padding: 4em;
-    transition: all linear 1s;
-}
-
-.contact-container img{
-    max-width: 7em;
-    width: 120px;
-    filter: invert();
-}
-
-.contact-container .form-img {
-    filter: none;
 }
 
 .impressum {
@@ -596,6 +535,22 @@ nav a:hover img{
     margin: 0;
 }
 
+.contactformular {
+    align-self: center;
+    max-width: 36em;
+}
+
+.contactformular h1 {
+    font-size: xxx-large;
+
+}
+
+.contactformular h1,
+.contactformular p{
+    margin: 1em 0 1em 0;
+    padding: 0;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -612,7 +567,7 @@ input, textarea {
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    width: 100%;
+    width: 98%;
 }
 
 form button {
@@ -686,10 +641,6 @@ form button:hover {
 @media all and (max-width: 890px) {
     .header a {
         font-size: medium;
-    }
-
-    .secone {
-        width: auto;
     }
 
     .secone h1 {
@@ -974,7 +925,8 @@ form button:hover {
     }
 
     .contactformular{
-        width: 100%;
+        width: 90%;
+        padding: 1em;
     }
 
     .contactformular h1{
