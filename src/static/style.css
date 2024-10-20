@@ -635,6 +635,9 @@ form button:hover {
         padding: 2.4em;
     }
 
+    .impressum-page {
+        gap: 0;
+    }
 }
 
 
