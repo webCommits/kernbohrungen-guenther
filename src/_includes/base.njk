@@ -13,6 +13,15 @@
   <script src="{{ global.baseurl }}/static/script.js"></script>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+    @media all and (max-width: 690px) {
+      .background::before{
+          background-image: url("/kernbohrungen-guenther/static/images/loch.jpg");
+      }
+      #machinepic::before {
+          background-image: url("/kernbohrungen-guenther/static/images/loch_filter.png");
+      }
+    }
   </style>
 </head>
 
