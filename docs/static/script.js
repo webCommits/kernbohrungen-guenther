@@ -74,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
     showTopButton();
     showContactButtons();
     animateHeader();
-    smoothScrollWithOffset('#scroll-arrow');
 })
 
 const observer = new IntersectionObserver((entries => {
