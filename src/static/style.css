@@ -746,7 +746,7 @@ form button:hover {
         right: 0;
         bottom: 0;
         width: 100%;
-        background-image: url("../static/images/loch.jpg");
+        background-image: url("var(--baseurl)/static/images/loch.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         filter: blur(8px);
@@ -759,7 +759,7 @@ form button:hover {
     }
 
     #machinepic::before {
-        background-image: url("../static/images/loch_filter.png");
+        background-image: url("var(--baseurl)/static/images/loch_filter.png");
         background-position: 60% 100%;
     }
 

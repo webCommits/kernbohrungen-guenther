@@ -70,6 +70,7 @@ function animateHeader() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    document.documentElement.style.setProperty('--baseurl', '/kernbohrungen-guenther');
     showTopButton();
     showContactButtons();
     animateHeader();
