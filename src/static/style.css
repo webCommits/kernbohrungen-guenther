@@ -746,7 +746,7 @@ form button:hover {
         right: 0;
         bottom: 0;
         width: 100%;
-        background-image: url("kernbohrungen-guenther/src/static/images/loch.jpg");
+        background-image: url("/kernbohrungen-guenther/docs/static/images/loch.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         filter: blur(8px);
@@ -759,7 +759,7 @@ form button:hover {
     }
 
     #machinepic::before {
-        background-image: url("/kernbohrungen-guenther/static/images/loch_filter.png");
+        background-image: url("/kernbohrungen-guenther/docs/static/images/loch_filter.png");
         background-position: 60% 100%;
     }
 
