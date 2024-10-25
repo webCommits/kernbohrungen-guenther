@@ -572,7 +572,7 @@ input, textarea {
 
 form button {
     background-color: var(--secondary);
-    color: var(--font);
+    color: #f9faf8;
     border-radius: 8px;
     font-size: large;
     padding: 0.5em;
