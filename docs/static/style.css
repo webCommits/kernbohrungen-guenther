@@ -1,0 +1,980 @@
+:root{
+    --main-bg: #0047BB;
+    --main-bg-dark: #0047BB;
+    --main-bg-secondary: #013280;
+    --main-sec: #0047BB;
+    --secondary: #0047BB;
+    --primary: #003ab7;
+    --font: #000000;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 72em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    background: #f9faf8;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--font);
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font);
+    font-size: 18px;
+}
+
+.header {
+    background-color: var(--main-bg-dark);
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
+    z-index: 999;
+    width: 100%;
+}
+
+.full{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 42px;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--font);
+}
+
+nav img {
+    height: 26px;
+    width: 26px;
+    filter: invert();
+}
+
+.menubtn {
+    display: none;
+}
+
+nav a:hover {
+    background-color: #f9faf8;
+    border: var(--main-bg-secondary);
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+
+nav a:hover img{
+    filter: none;
+}
+
+#smalllogo {
+    margin-right: auto;
+    display: none;
+}
+
+#smalllogo a:hover{
+    background: none;
+    filter: invert();
+}
+
+#biglogo {
+    height: 10em;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3em;
+}
+
+#biglogo img{
+    height: 8em;
+    width: auto;
+}
+
+#biglogo a:hover{
+    background: none;
+    filter: invert();
+}
+
+.logo {
+    height: 64px;
+    width: auto;
+    filter: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: var(--main-bg);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px #1f2937;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 0;
+    margin-right: 0;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.3s ease;
+}
+
+.open {
+    transform: translateX(0); /* Added */
+    opacity: 1; /* Added */
+}
+
+.sidebar li {
+    padding-top: 20px;
+    width: 80%;
+}
+
+.sidebar a {
+    width: 100%;
+    color: #f9faf8;
+    padding: 8px;
+}
+
+.sidebar a:hover {
+    color: var(--font);
+    background-color: #f9faf8;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    padding-bottom: 12px;
+}
+
+.links a{
+    padding: 12px;
+    color: #f9faf8;
+}
+
+.links a:hover{
+    background-color: #C7C7C7;
+    color: var(--font);
+    transition: all ease-in-out 0.5s;
+}
+
+.secone {
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    align-items: flex-start;
+    gap: 0em;
+    color: var(--font);
+    font-size: 1.1em;
+    text-align: left;
+}
+
+.secone h1{
+    font-size: 4em;
+}
+
+.secone h3,
+.secone h1 {
+    margin: 0;
+    padding: 20px;
+}
+
+.secone img{
+    width: 100%;
+    height: 24em;
+    margin-top: 0;
+    margin-bottom: 2em;
+    object-fit: cover;
+    object-position: 100% 80%;
+}
+
+#machinepic {
+    object-position: 100% 20%;
+}
+
+.secone p {
+    font-size: larger;
+    padding: 20px 40px 10px 20px;
+    text-align: justify;
+}
+
+.secone ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    gap: 0;
+}
+
+.secone ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    text-align: left;
+    gap: 1em;
+}
+
+.secone ul p {
+    padding: 0;
+    margin: 0;
+}
+
+.secone ul li img {
+    width: auto;
+    height: 18px;
+    filter: invert(11%) sepia(80%) saturate(3226%) hue-rotate(213deg) brightness(60%) contrast(99%);
+}
+
+.secone ul li p{
+    padding: 0px 40px 10px 0px;
+    margin: 0;
+}
+
+.seconebutton {
+    background-color: var(--secondary);
+    border-radius: 8px;
+    font-size: large;
+    padding: 0.5em 2em;
+    border: 0;
+    font-weight: 400;
+    margin-top: 24px;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
+    align-self: center;
+}
+
+.seconebutton a {
+    color: #f9faf8;
+}
+
+.seconebutton:hover {
+    background-color: var(--main-bg-secondary);
+    transition: ease-in-out 0.5s;
+}
+
+#about {
+    margin-top: 0;
+    margin-bottom: 4em;
+}
+
+#aboutus {
+    margin-bottom: 6em;
+}
+
+#aboutus .right img{
+    max-width: 24em;
+}
+
+.secthree {
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 1em 6em 3em 6em;
+}
+
+.preisliste {
+    margin-top: 3em;
+    color: var(--font);
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.preisliste h1{
+    font-size: 3em;
+}
+
+.preisliste h3,
+.preisliste h1 {
+    margin: 0;
+}
+
+.secthree p{
+    color: var(--font);
+    text-align: center;
+}
+
+.secthreecontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10em;
+    margin-bottom: 3em;
+    padding-top: 4em;
+    width: 100%;
+    height: 100%;
+}
+
+.secthreecontent img {
+    /* Ehemals Preislistenbild */
+    max-height: 20em;
+} 
+
+.secthreecontent iframe {
+    max-width: 100%;
+}
+
+.secthreebutton {
+    background-color: var(--primary);
+    color: white;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: white;
+    font-size: large;
+    padding: 10px 16px;
+    font-weight: lighter;
+}
+
+.secthreebutton:hover {
+    background-color: #ae9db6;
+}
+
+.impressum {
+    background-color: var(--main-bg);
+    color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 2em 4em;
+    gap: 1em;
+}
+
+.impressum img{
+    max-height: 80px;
+    margin-top: 2em;
+}
+
+.impressum a:hover{
+    background-color: var(--main-bg-secondary);
+    padding: 2px;
+    transition: all linear 0.5s;
+}
+
+.impressum h3 {
+    margin-bottom: 0;
+}
+
+.impressum p {
+    margin: 0;
+}
+
+.imprcontainer {
+    margin-left: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 14em;
+}
+
+.imprcontainer a:hover{
+    background: none;
+    filter: invert();
+}
+
+.footer {
+    background-color: var(--main-bg);
+    color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    flex-direction: column;
+}
+
+.footer ul {
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.totop {
+    background: var(--main-bg-secondary);
+    position: fixed;
+    bottom: 64px;
+    right: 64px;
+    width: 32px;
+    height: 32px;
+    border: var(--secondary);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0 4px #000000;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.totop.active {
+    bottom: 64px;
+    opacity: 60%;
+    pointer-events: auto;
+}
+
+.telbutton {
+    background: var(--main-bg-secondary);
+    position: fixed;
+    bottom: 64px;
+    right: 64px;
+    width: 32px;
+    height: 32px;
+    border: var(--secondary);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0 4px #000000;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.telbutton.active {
+    bottom: 164px;
+    opacity: 60%;
+    pointer-events: auto;
+}
+
+.mailbutton {
+    background: var(--main-bg-secondary);
+    position: fixed;
+    bottom: 64px;
+    right: 64px;
+    width: 32px;
+    height: 32px;
+    border: var(--secondary);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0 4px #000000;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.mailbutton.active {
+    bottom: 114px;
+    opacity: 60%;
+    pointer-events: auto;
+}
+
+.totop img,
+.telbutton img,
+.mailbutton img{
+    width: 18px;
+    filter: invert();
+}
+
+.spacer {
+    margin-bottom: 8em;
+}
+
+.impressum-page{
+    margin: 0em 2em 0em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+    text-align: justify;
+    overflow: auto;
+}
+
+.impressum-page p{
+    color: var(--font);
+    margin: 0;
+}
+
+.contactformular {
+    align-self: center;
+    max-width: 36em;
+}
+
+.contactformular h1 {
+    font-size: xxx-large;
+
+}
+
+.contactformular h1,
+.contactformular p{
+    margin: 1em 0 1em 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 98%;
+}
+
+form button {
+    background-color: var(--secondary);
+    color: #f9faf8;
+    border-radius: 8px;
+    font-size: large;
+    padding: 0.5em;
+    border: 0;
+    font-weight: 400;
+    margin-top: 8px;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
+    margin-bottom: 3em;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: var(--main-bg-secondary);
+    transition: ease-in-out 0.5s;
+}
+
+
+@media all and (max-width: 1250px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menubtn {
+        display: block;
+    }
+
+    .sectwo .left h3{
+        text-align: left;
+        font-size: x-large;
+    }
+
+    .sectwo .right img{
+        max-width: 20em;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    h1 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    nav ul {
+        margin-right: 0;
+    }
+
+    .secone {
+        gap: 0;
+    }
+
+    .sectwo {
+        margin-left: 8px;
+    }
+
+    .contact-container a {
+        padding: 2em;
+    }
+
+    .contact-container a:hover {
+        padding: 2.4em;
+    }
+}
+
+
+@media all and (max-width: 890px) {
+    .header a {
+        font-size: medium;
+    }
+
+    .secone h1 {
+        font-size: 3em;
+        text-align: left;
+        color: #000000;
+    }
+
+    .secone p {
+        font-size: medium;
+    }
+
+    .seconeright {
+        max-width: 20em;
+    }
+
+    .sectwo {
+        margin-left: 8px;
+        margin-right: 0;
+    }
+
+    .sectwo .right img{
+        max-width: 18em;
+        margin-top: 4em;
+    }
+
+    #aboutus .right img{
+        max-width: 10em;
+    }
+
+    #philosophy .right {
+        margin: 3.6em 4em 0em 0em;
+    }
+    
+    #philosophy .right img{
+        border-radius: 12px;
+        max-width: 16em;
+    }
+
+    .website-container {
+        text-align: center;
+    }
+
+    .website-containerpo {
+        text-align: center;
+    }
+
+    .contact-container a {
+        padding: 1em;
+    }
+
+    .contact-container a:hover {
+        padding: 1.4em;
+    }
+
+    .imprcontainer {
+        gap: 4em;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer ul {
+        padding: 0;
+    }
+}
+
+@media all and (max-width: 690px) {
+    .logo {
+        height: 36px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    #biglogo img{
+        height: 6em;
+    }
+
+    .links ul{
+        justify-content: center;
+        padding: 0;
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+
+    .links ul li{
+        margin-bottom: 8px;
+    }
+
+    .background {
+        padding: 3em 0em;
+        position: relative;
+        z-index: 1;
+    }
+
+    .background::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background-image: url("../static/images/loch.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(8px);
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    .background img {
+        display: none;
+    }
+
+    #machinepic::before {
+        background-image: url("../static/images/loch_filter.png");
+        background-position: 60% 100%;
+    }
+
+    .sectwo{
+        padding: 2em;
+        position: relative;
+        z-index: 1;
+    }
+
+    .sectwo::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background-image: url("/static/images/markusspiske-code.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(8px);
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    #about h1 {
+        font-size: xx-large;
+        text-align: left;
+    }
+
+    #aboutus::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background-image: url("/static/images/portrait.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(8px);
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    #philosophy::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background-image: url("/static/images/code.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(8px);
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    .sectwo h2 {
+        font-size: larger;
+    }
+
+    .sectwo .right{
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .portfolio{
+        margin-top: 4em;
+    }
+
+    .website-container {
+        position: relative;
+        z-index: 1;
+        --background-image: none;
+        padding-bottom: 4em;
+    }
+
+    .website-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-image: var(--background-image);
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(2px);
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    .website-container .images{
+        display: none;
+    }
+
+    .website-container .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .website-container .right h3 {
+        color: var(--primary);
+        text-align: center;
+    }
+
+    .website-containerpo {
+        position: relative;
+        z-index: 1;
+        --background-image: none;
+        padding-bottom: 4em;
+    }
+
+    .website-containerpo::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-image: var(--background-image);
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(2px);
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    .website-containerpo .images{
+        display: none;
+    }
+
+    .website-containerpo .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .website-containerpo .right h3 {
+        color: var(--primary);
+        text-align: center;
+    }
+
+    .secthree {
+        padding: 1em 2em 1em 2em;
+    }
+
+    .secthreecontent {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .contactformular{
+        width: 90%;
+        padding: 1em;
+    }
+
+    .contactformular h1{
+        font-size: xx-large;
+    }
+
+    .contact-container{
+        gap: 2em;
+    }
+
+    .contact-container img{
+        max-width: 7em;
+        width: 42px;
+        filter: invert();
+    }
+
+
+    .imprcontainer {
+        display: block;
+    }
+
+    .totop.active {
+        bottom: 24px;
+        right: 24px;
+        opacity: 60%;
+    }
+
+    .telbutton.active {
+        bottom: 64px;
+        right: 24px;
+        opacity: 60%;
+    }
+
+    .mailbutton.active {
+        bottom: 104px;
+        right: 24px;
+        opacity: 60%;
+    }
+}
+
+/* Observer animation */
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+}
