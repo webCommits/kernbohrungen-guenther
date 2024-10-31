@@ -58,12 +58,15 @@ a {
     box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
     z-index: 999;
     width: 100%;
+    height: max-content;
+    transition: height 0.5s ease; /* Transition für sanften Wechsel */
 }
 
 .full{
     position: fixed;
     top: 0;
     left: 0;
+    height: 90px;
 }
 
 nav ul {
@@ -203,6 +206,11 @@ nav a:hover img{
     color: var(--font);
     transition: all ease-in-out 0.5s;
 }
+
+.main-content {
+    margin-top: 0;
+}
+
 
 .secone {
     background-color: none;
